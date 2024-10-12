@@ -1,0 +1,52 @@
+
+.header-top{
+    background-color:rgb(245,246,249);
+}
+
+
+.header-right{
+    text-align: right;
+
+}
+.header-middle {
+    margin: 15px 0px;
+    align-items: flex-end;
+}
+.large-font {
+    font-size: 30px;
+}
+
+.input-group-append {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+input::placeholder {
+    font-size: 16px; /* Thay đổi giá trị này theo nhu cầu của bạn */
+}
+/* Đặt màu viền cho ô nhập liệu */
+.rounded-form .form-control {
+    border-radius: 25px 0 0 25px; /* Góc tròn cho phía trái của input */
+    height:50px;   
+    outline: 2px 0px 2px 2px solid #000000!important; /* Đặt màu viền khi focus */
+    border: 2px 0px 2px 2px solid #000000 !important; /* Đặt màu viền */
+}
+
+/* Đặt màu viền cho nút tìm kiếm */
+.rounded-form .btn-outline-secondary {
+    border-radius: 0 25px 25px 0; /* Góc tròn cho phía phải của button */
+    outline: none;
+    border-left: none;
+    border: 1px 1px 1px 0px solid #000000; /* Đặt màu viền */
+}
+
+/* Đặt màu viền khi focus vào nút tìm kiếm và ô nhập liệu */
+.rounded-form .form-control:focus, .rounded-form .btn-outline-secondary:focus {
+    outline: 2px solid #000000 !important; /* Đặt màu viền khi focus */
+    box-shadow: none !important;
+}
+.navbar {
+    background-color: transparent !important;
+}
+.nav-item{
+    padding: 10px 20px;
+}

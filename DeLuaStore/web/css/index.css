@@ -1,0 +1,157 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 24, 2024, 3:03:58 PM
+    Author     : Anh Tu
+*/
+
+.header {
+    align-items: center;
+    text-align: center;
+}
+
+.brand-container {
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.brand-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    /* This allows wrapping of brand elements */
+}
+
+.brand img {
+    width: 70%;
+    /* Adjusted to fit the container properly */
+    box-sizing: border-box;
+    /* Ensure padding and borders are included in the width */
+    transition: all 0.3s ease;
+
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    /* Added margin for spacing between brands */
+    width: 20%;
+    /* Set width for consistent sizing */
+
+}
+.brand a{
+    display: flex;
+    
+}
+
+
+/* Thêm hiệu ứng hover cho hình ảnh PNG */
+.brand img:hover {
+    transform: translateY(-20px);
+    /* Di chuyển hình ảnh lên 20px */
+    transition: transform 0.3s ease;
+    /* Tạo hiệu ứng chuyển đổi mượt mà */
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+    /* Thêm bóng đổ chỉ cho hình ảnh */
+}
+
+.top-selling {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.top-selling h2 {
+    text-align: left;
+}
+
+.top-selling img {
+    max-width: 100%; /* Giới hạn chiều rộng tối đa của ảnh */
+    max-height: 100%; /* Giới hạn chiều cao tối đa của ảnh */
+    height: 143px; /* Đảm bảo chiều cao tự động điều chỉnh theo tỷ lệ của chiều rộng */
+    object-fit: contain; /* Đảm bảo ảnh phù hợp với kích thước mà không làm mất tỷ lệ và không cắt bỏ phần nào của ảnh */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+   
+}
+.top-selling img:hover {
+    transform: scale(1.1);
+    /* Scale the image to 1.1 times its original size */
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+.top-selling .card {
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    height:390px;
+    width: 240px;
+    
+
+}
+
+.top-selling a:hover {
+    color: #000;
+}
+
+.top-selling .img-container {
+    padding:12%;
+    display: flex;
+    justify-content: center;
+}
+
+.top-selling .product-price {
+    color: #fcb941;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Căn giữa các phần tử ngang */
+    flex-wrap: wrap; /* Đảm bảo các card sẽ quấn sang dòng tiếp theo nếu cần */
+    gap: 38px; /* Khoảng cách giữa các card, tùy chỉnh theo ý muốn */
+    
+
+}
+
+.add-view-container{
+    display: flex;
+    flex-direction: row;
+    max-width: 240px;
+}
+.top-selling .description {
+   padding: 0px 10px;
+   justify-content: space-between;
+}
+.add-to-cart, .view-detail {
+    padding: 0px;
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-left: 1px solid rgba(0,0,0,.125);
+    border-right: 1px solid rgba(0,0,0,.125);
+    border-bottom: none; /* Loại bỏ viền dưới */
+    width: 50%;
+    line-height:37px;
+    text-align: center;
+}
+
+.add-to-cart:hover , .view-detail:hover {
+    background-color: #fcb941;
+    color: #fff;
+    border: 1px solid #fcb941;
+}
+
+.selling-nav-container .view-all{
+   text-align: right;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }

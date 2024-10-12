@@ -1,0 +1,212 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 8, 2024, 9:26:54 PM
+    Author     : Anh Tu
+*/
+
+.product-container .main-img img{
+
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.product-container .img-choice img{
+    width: 100%;
+
+}
+.product-container .img-choice-container{
+    margin-top: 20px;
+  
+}
+
+
+.product-container .rating-container span{
+    color: rgba(231, 231, 5, 0.653);
+
+}
+.rating-container .rating-count{
+    color: #000 !important;
+}
+.color-options, .storage-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color-options label, .storage-options label {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.color-options label img, .storage-options label img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+.color-options label input[type="radio"], .storage-options label input[type="radio"] {
+    display: none;
+}
+
+.color-options label input[type="radio"]:checked + img, .storage-options label input[type="radio"]:checked + img {
+    border-color: #337ab7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.quantity{
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.product-container {
+    /*    width: 80%;*/
+    /*    margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;*/
+    /*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.category {
+    font-size: 18px;
+    color: #333;
+}
+
+.share a {
+    margin: 0 5px;
+}
+
+.share img {
+    width: 20px;
+    height: 20px;
+}
+
+.accordion {
+    border-top: 1px solid #ccc;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion-button::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item input:checked ~ .accordion-button::after {
+    transform: rotate(45deg);
+}
+
+.accordion-item input {
+    display: none;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #f1f1f1;
+}
+
+.accordion-item input:checked ~ .accordion-content {
+    display: block;
+}
+.btn-group-toggle .btn input[type="radio"] {
+    display: none;
+}
+.btn-group-toggle .btn.active {
+    background-color: #fd7c4f !important; /* Màu nền khi được chọn */
+    color: #fff !important; /* Màu chữ khi được chọn */
+    border-color: #fd7c4f !important;  /* Màu viền khi được chọn */
+}
+.btn-group-toggle .btn:not(.active) {
+    color: #000000;
+    background-color: #fff;/* Màu nền khi không được chọn */
+    border-color: #000000;
+   
+}
+.btn-group-toggle .btn {
+    margin-right: 10px; /* Khoảng cách giữa các nút */
+}
+.shipping-info, .returns-info, .contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.shipping-info h2, .returns-info h2, .contact-info h2 {
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+/* Adjust font size and spacing */
+.accordion-content {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Style for each technical detail section */
+.accordion-content p {
+    margin-bottom: 0.5rem;
+}
+
+/* Horizontal line styling */
+.accordion-content hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Container for accordion items */
+.accordion-item {
+    margin-bottom: 1rem;
+}
+

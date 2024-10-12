@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 24, 2024, 4:08:13 PM
+    Author     : Anh Tu
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+html {
+    font-size: 70%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size-adjust: 100%;
+    font-family: 'Poppins' !important;
+}
+option{
+    font-size: 70%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size-adjust: 100%;
+    font-family: 'Poppins' !important;
+}
+html,
+body {
+    height: 100%
+}
+
+body {
+    font: normal 300 1.4rem/1.86 "Poppins"  !important;
+    color: #666; /* Đã thay đổi từ #666 sang #000 */
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    
+}
+a{
+    color: #666 !important; 
+    /*Đã thay đổi từ #666 sang #000*/ 
+    text-decoration: none;
+}
+
+a:hover{
+    color: #000;  
+    /*Đã thay đổi từ #666 sang #000*/ 
+    text-decoration: none !important;
+
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #c96
+}
+
+::selection {
+    color: #fff;
+    background-color: #c96
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    padding: 0 !important;
+}
